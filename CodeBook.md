@@ -1,14 +1,14 @@
 
 # This codebook describes the data, steps of cleaning and variables
 
-## Data Sets:
+## Data Sets
 
 Original data sets: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 Data set created by run_analysis.R: tidy_data.txt
 
 
-## Steps of cleaning:
+## Steps of cleaning
 
 1. Merge the training and test data sets 
 3. Extract only the mean and standard deviation columns
