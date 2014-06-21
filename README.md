@@ -4,10 +4,10 @@ This project is intended to generate a tidy data file from the UCI HAR Dataset. 
 
 ## Code
 
-The code file is run_analysis.R. Briefly we merge the test and training files from the UCI HAR Dataset into one data file. We choose the columns with subject, activity, mean and standard diviation to form a new data file. On the new file we use gsub to clean variable names. Also we use the reshape2 package to generate the output file: tidy_data.txt
+The code file is run_analysis.R. Briefly we merge the test and training files from the UCI HAR Dataset into one data file. We choose the columns of subject, activity, mean and standard diviation to form a new data file. On the new file we use gsub to clean variable names. Also we use the reshape2 package to generate the output file: tidy_data.txt
 
 To run the script, type in R
-source(run_analysis.R). Make sure that you are in a directory thart contains the data files.
+source(run_analysis.R). Make sure that you are in a directory that contains the data files.
 
 More information on variables is in CodeBook.md
 
