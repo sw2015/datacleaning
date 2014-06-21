@@ -9,5 +9,5 @@ The code file is run_analysis.R. Briefly we merge the test and training files fr
 To run the script, type in R
 source(run_analysis.R). Make sure that you are in a directory that contains the data files.
 
-More information on variables is in CodeBook.md
+More information on variables is in CodeBook.md and more comments are in run_analysis.R
 
