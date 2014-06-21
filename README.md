@@ -1,6 +1,6 @@
 ## Introduction
 
-This project is intended to generate a tidy data file from the UCI HAR Dataset. The UCI HAR Dataset consists of accelerometer readings from 30 individuals (labels 1 to 30) engaged in 6 activities (1 WALKING, 2 WALKING_UPSTAIRS, 3 WALKING_DOWNSTAIRS, 4 SITTING, 5 STANDING, 6 LAYING).
+This project is intended to generate a tidy data file from the UCI HAR Dataset. The UCI HAR Dataset consists of accelerometer readings from 30 individuals (labeled 1 to 30) engaged in 6 activities (1 WALKING, 2 WALKING_UPSTAIRS, 3 WALKING_DOWNSTAIRS, 4 SITTING, 5 STANDING, 6 LAYING).
 
 ## Code
 
