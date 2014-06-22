@@ -1,8 +1,7 @@
 ############# -1. preliminaries
 
 #set working directory. This directory contains the test and train data sets that were downloaded from the web. 
-
-setwd("/Users/datascience")
+#setwd("/Users/datascience")
 
 #install reshape2 package
 # install.packages("reshape2")
