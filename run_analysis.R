@@ -1,7 +1,8 @@
 ############# -1. preliminaries
 
 #set working directory. This directory contains the test and train data sets that were downloaded from the web. 
-#setwd("/Users/datascience")
+
+setwd("/Users/datascience")
 
 #install reshape2 package
 # install.packages("reshape2")
@@ -11,15 +12,15 @@
 
 #load test data
 
-X_test <- read.table("./UCI HAR Dataset/test/X_test.txt", sep="", header=FALSE)
-y_test <- read.table("./UCI HAR Dataset/test/y_test.txt", sep="", header=FALSE)
-subject_test <- read.table("./UCI HAR Dataset/test/subject_test.txt", sep="", header=FALSE)
+X_test <- read.table("./cleaning/Project/test/X_test.txt", sep="", header=FALSE)
+y_test <- read.table("./cleaning/Project/test/y_test.txt", sep="", header=FALSE)
+subject_test <- read.table("./cleaning/Project/test/subject_test.txt", sep="", header=FALSE)
 
 #load train data
 
-X_train <- read.table("./UCI HAR Dataset/train/X_train.txt", sep="", header=FALSE)
-y_train <- read.table("./UCI HAR Dataset/train/y_train.txt", sep="", header=FALSE)
-subject_train <- read.table("./UCI HAR Dataset/train/subject_train.txt", sep="", header=FALSE)
+X_train <- read.table("./cleaning/Project/train/X_train.txt", sep="", header=FALSE)
+y_train <- read.table("./cleaning/Project/train/y_train.txt", sep="", header=FALSE)
+subject_train <- read.table("./cleaning/Project/train/subject_train.txt", sep="", header=FALSE)
 
 #merge columns of test data in the order of subject, y_test and X_test
 
@@ -35,7 +36,7 @@ mergedtrain <- cbind(subject_train, y_train, X_train)
 
 merged <- rbind(mergedtest,mergedtrain)
 
-feature <- read.table("./UCI HAR Dataset/features.txt", sep="", header=FALSE)
+feature <- read.table("./cleaning/Project/features.txt", sep="", header=FALSE)
 
 # add column names to it
 
@@ -63,7 +64,7 @@ mean_std_measure <- merged[, c("Subject", "activitylabel", title_mean, title_std
 ############### the data set by subjects and acitivty labels(for tie breaking)
 
 
-activity_labels <- read.table("./UCI HAR Dataset/activity_labels.txt", sep="", header=FALSE)
+activity_labels <- read.table("./cleaning/Project/activity_labels.txt", sep="", header=FALSE)
 
 names(activity_labels) <- c("activitylabel", "Activity")
 
